@@ -48,7 +48,7 @@ int main(int argc, char **argv, char **env) {
 
     // plot RAM input/output, send sample to DAC buffer, and print cycle count
     vbdPlot(int (top->mic_signal), 0, 255);
-    vbdPlot(int (top->del_sig), 0, 255);
+    vbdPlot(int (top->delayed_signal), 0, 255);
     vbdCycle(simcyc);
 
     // either simulation finished, or 'q' is pressed
